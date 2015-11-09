@@ -526,21 +526,25 @@ public class ControlFragment extends Fragment {
                 long dtMili1 = System.currentTimeMillis();
                 //System.out.println("dtmilli1 = " + dtMili1);
 
-                for (int j = 0; j < red1on.length; j++) {
+                //for (int j = 0; j < red1on.length; j++) {
+                for (int j : red1on) {
                     if (timercounter == red1on[j]) {
                         //System.out.println("Setting Red on at " + timercounter);
                         red1SetToOn = true;
                     }
                 }
 
-                for (int j = 0; j < red1off.length; j++) {
+               // for (int j = 0; j < red1off.length; j++) {
+                for (int j : red1off) {
                     if (timercounter == red1off[j]) {
-                        //System.out.println("Setting Red off at " + timercounter);
+                            //System.out.println("Setting Red off at " + timercounter);
                         red1SetToOn = false;
                     }
+
                 }
 
-                for (int j = 0; j < green1on.length; j++) {
+                //for (int j = 0; j < green1on.length; j++) {
+                for (int j: green1on) {
                     if (timercounter == green1on[j]) {
                         //System.out.println("Setting Green1 on at " + timercounter);
                         green1SetToOn = true;
@@ -548,7 +552,8 @@ public class ControlFragment extends Fragment {
                     }
                 }
 
-                for (int j = 0; j < green1off.length; j++) {
+                //for (int j = 0; j < green1off.length; j++) {
+                for (int j :green1off) {
                     if (timercounter == green1off[j]) {
                         //System.out.println("Setting Green1 off at " + timercounter);
                         green1SetToOn = false;
@@ -556,14 +561,16 @@ public class ControlFragment extends Fragment {
                 }
 
 
-                for (int j = 0; j < green2on.length; j++) {
+                //for (int j = 0; j < green2on.length; j++) {
+                for (int j :green2on) {
                     if (timercounter == green2on[j]) {
                         //System.out.println("Setting Green2 on at " + timercounter);
                         green2SetToOn = true;
                     }
                 }
 
-                for (int j = 0; j < green2off.length; j++) {
+                //for (int j = 0; j < green2off.length; j++) {
+                for (int j: green2off) {
                     if (timercounter == green2off[j]) {
                         //System.out.println("Setting Green2 off at " + timercounter);
                         green2SetToOn = false;
@@ -626,7 +633,6 @@ public class ControlFragment extends Fragment {
             //System.out.println("dtmilli2 = " + dtMili2);
         }
 
-        ;
 
     }
 }
