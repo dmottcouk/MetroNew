@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/soundicon"
+        android:icon="@drawable/soundoff"
+        android:title="@string/soundOfficon"
+        myapp:showAsAction="always"
+        />
+    <item android:id="@+id/soundoption" android:title="@string/soundoption" android:orderInCategory="101"></item>
+</menu>
