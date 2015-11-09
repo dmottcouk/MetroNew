@@ -17,7 +17,5 @@
 <resources>
 
 
-<style name="NewsReaderStyle_NoActionBar" parent="android:Theme.Holo.Light.NoActionBar">
-</style>
 
 </resources>

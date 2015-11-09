@@ -18,6 +18,14 @@
     <string name="hello">Hello World, NewsReaderActivity!</string>
     <string name="app_name">NewMetro</string>
     <string name="seekheader">Beats per minute</string>
+    <string name="soundoption">Sound Control</string>
+    <string name="soundprompt">Sound On?</string>
+    <string name="soundoptionOn">Yes</string>
+    <string name="soundoptionOff">No</string>
+    <string name="soundOfficon">Sound Off</string>
+    <string name="soundOnicon">Sound On</string>
+
+    <string name="temponotset">No tempo is set</string>
 
     <string-array name="beat_value_options">
         <item name="quaver">Beat value</item>
@@ -33,17 +41,8 @@
         <item name="5">5</item>
         <item name="6">6</item>
         <item name="7">7</item>
-        <item name="9">9</item>
-        <item name="10">10</item>
-        <item name="11">11</item>
-        <item name="12">12</item>
-        <item name="13">13</item>
-        <item name="14">14</item>
-        <item name="15">15</item>
-        <item name="16">16</item>
-        <item name="17">17</item>
     </string-array>
-
+    <string name="startmetro">Start</string>
 
 
 </resources>
