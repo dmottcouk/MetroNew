@@ -9,9 +9,12 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 //public class MainActivity extends FragmentActivity {
-    public class MainActivity extends AppCompatActivity implements ControlFragment.OnStartButtonClickedListener ,SoundOptionDialogFragment.SoundOptionDialogListener {
+    //public class MainActivity extends AppCompatActivity implements ControlFragment.OnStartButtonClickedListener ,SoundOptionDialogFragment.SoundOptionDialogListener {
 
-    // Whether or not we are in dual-pane mode
+    public class MainActivity extends AppCompatActivity implements ControlFragment.OnStartButtonClickedListener ,PresetTempoDialogFragment.TempoOptionDialogListener {
+
+
+        // Whether or not we are in dual-pane mode
     boolean mIsDualPane = false;
 
     // The fragment where the metronome setup is displayed
@@ -73,10 +76,28 @@ import android.widget.Toast;
         // Handle item selection
         switch (item.getItemId()) {
 
-           case R.id.soundoption:
-               SoundOptionDialogFragment mySoundDialog = new SoundOptionDialogFragment();
-               mySoundDialog.show(getSupportFragmentManager(), "SoundOptionDialogFragment");
+           //case R.id.soundoption:
+           //    SoundOptionDialogFragment mySoundDialog = new SoundOptionDialogFragment();
+           //    mySoundDialog.show(getSupportFragmentManager(), "SoundOptionDialogFragment");
+           //     return true;
+            case R.id.presettempos:
+                PresetTempoDialogFragment myPresetsDialog = new PresetTempoDialogFragment();
+                myPresetsDialog.show(getSupportFragmentManager(), "PresetTempoDialogFragment");
                 return true;
+            case R.id.soundicon: // toggle the sound on option off and on
+                if (soundOptionOn == true)
+                {
+                    soundOptionOn = false;
+                    updateMySoundIcon(false);
+                }
+                else
+                {
+                    soundOptionOn = true;
+                    updateMySoundIcon(true);
+                }
+                return true;
+
+
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -118,16 +139,17 @@ import android.widget.Toast;
     }
 
     @Override
-    public void onDialogPositiveClick(DialogFragment dialog) {
-        soundOptionOn = true;
-        updateMySoundIcon(true);
-
+    //public void onDialogPositiveClick(DialogFragment dialog) {
+    public void onDialogPositiveClick(DialogFragment dialog, int bpm) {
+        //soundOptionOn = true;
+        //updateMySoundIcon(true);
+        mControlFragment.setTheTempoPreset(bpm);
     }
 
     @Override
     public void onDialogNegativeClick(DialogFragment dialog) {
-        soundOptionOn = false;
-        updateMySoundIcon(false);
+        //soundOptionOn = false;
+        //updateMySoundIcon(false);
 
     }
 
