@@ -6,5 +6,5 @@
         android:title="@string/soundOfficon"
         myapp:showAsAction="always"
         />
-    <item android:id="@+id/soundoption" android:title="@string/soundoption" android:orderInCategory="101"></item>
+    <item android:id="@+id/presettempos" android:title="@string/tempopresetlist" android:orderInCategory="101"></item>
 </menu>
