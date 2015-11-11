@@ -24,6 +24,7 @@
     <string name="soundoptionOff">No</string>
     <string name="soundOfficon">Sound Off</string>
     <string name="soundOnicon">Sound On</string>
+    <string name="presettempos">Presets</string>
 
     <string name="temponotset">No tempo is set</string>
 
@@ -32,6 +33,31 @@
         <item name="quaver">Quaver</item>
         <item name="crotchet">Crotchet</item>
         <item name="minim">Minim</item>
+    </string-array>
+    <string name="tempopresetlist">Preset Tempos</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <string-array name="preset_tempo_options">
+        <item name="grave">Grave</item>
+        <item name="largo">Largo</item>
+        <item name="lento">Lento</item>
+        <item name="adagio">Adagio</item>
+        <item name="larghetto">Larghetto</item>
+        <item name="andante">Andante</item>
+        <item name="andantino">Andantino</item>
+        <item name="sostenuto">Sostenuto</item>
+        <item name="comodo">Comodo</item>
+        <item name="maestoso">Maestoso</item>
+        <item name="moderato">Moderato</item>
+        <item name="allegretto">Allegretto</item>
+        <item name="animato">Animato</item>
+        <item name="allegro">Allegro</item>
+        <item name="all.assai">Allegro assai</item>
+        <item name="all.vivace">Allegro vivace</item>
+        <item name="vivace">Vivace</item>
+        <item name="presto">Presto</item>
+        <item name="prestissimo">Prestissimo</item>
     </string-array>
     <string-array name="beats_per_bar_options">
         <item name="1">1</item>
